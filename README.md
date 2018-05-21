@@ -6,7 +6,7 @@
 
 ## redux-thunk源码解析 
 
-作用：redux-thunk是redux的一个中间件，dispatch()接受的参数是一个对象， 有了这个中间件disatch可以接受一个函数作为参数
+作用：redux-thunk是redux的一个中间件，dispatch()接受的参数是一个object， 有了这个中间件disatch可以接受一个function作为参数
 
 ```js
 function createThunkMiddleware(extraArgument) {
