@@ -3,6 +3,8 @@
 
 - [redux-thunk源码解析](#redux-thunk源码解析)
 - [applyMiddleware](#redux-thunk源码解析)
+- [高阶组件](#高阶组件)
+
 
 
 ## redux-thunk源码解析 
@@ -57,5 +59,23 @@ export default function applyMiddleware(...middlewares) {
   }
 }
 ```
+
+
+## 高阶组件
+高阶组件就是一个函数，且该函数接受一个组件作为参数，并返回一个新的组件class。
+
+对比组件中将props属性转变成UI，高阶组件则是将一个组件转换成另一个新组件class。
+
+高阶组件在React第三方库中很常见，比如Redux的connect方法和Relay的createContainer.
+
+高阶组件的用途主要有：
+
+1， 属性代理
+2， 抽象state
+3， 反向继承
+4， 渲染劫持
+
+
+
 
 
